@@ -1,0 +1,41 @@
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+/* основний шрифт 'Roboto', sans-serif;*/
+/* кольори
+-- колір вторинний #000000;
+-- акцент #2196F3;
+-- основний колір тексту #212121, #757575;
+-- фон дошки #2F303A;
+--фон секції працівників #F5F4FA;
+--фон макету #E5E5E5;
+--фон #fffff;
+*/
+.link {
+  text-decoration: none;
+  color: #212121;
+}
+.button {
+  border: none;
+  background-color: #2196f3;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+.section-tittle {
+}
+
+.list {
+  list-style: none;
+}
+
+.section {
+  background-color: #e5e5e5;
+}
+.current {
+}
