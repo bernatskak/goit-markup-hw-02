@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   color: #212121;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -16,11 +16,16 @@ body {
 --фон макету #E5E5E5;
 --фон #fffff;
 */
+
 .link {
   text-decoration: none;
   color: #212121;
 }
-.button {
+
+.link site-logo {
+}
+
+.current .button {
   border: none;
   background-color: #2196f3;
   cursor: pointer;
