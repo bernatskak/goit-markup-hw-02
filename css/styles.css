@@ -49,6 +49,8 @@ body {
 }
 
 .current {
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--current-color);
 }
 /* Header */
