@@ -1,38 +1,36 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Roboto', sans-serif;
+  /* Colors */
+  --main-dark-color: #000;
+  --main-light-color: #fff;
+  --current-color: #2196f3;
+  --secondary-color: #757575;
+  --main-color: #212121;
+  --border-color: #2f303a;
+  --badge-bg-color: #f5f4fa;
+}
+
 body {
-  background-color: #e5e5e5;
-  color: #212121;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font-family);
+
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
-}
-/* основний шрифт 'Roboto', sans-serif;*/
-/* кольори
--- колір вторинний #000000;
--- акцент #2196F3;
--- основний колір тексту #212121, #757575;
--- фон дошки #2F303A;
---фон секції працівників #F5F4FA;
---фон макету #E5E5E5;
---фон #fffff;
-*/
 
+  color: var(--main-color);
+}
+/* Common Styles */
 .link {
   text-decoration: none;
   color: #212121;
 }
-
-.link site-logo {
-}
-
-.current .button {
+.button {
   border: none;
   background-color: #2196f3;
   cursor: pointer;
   font-family: inherit;
   color: inherit;
-}
-.section-tittle {
 }
 
 .list {
@@ -40,7 +38,36 @@ body {
 }
 
 .section {
-  background-color: #e5e5e5;
+  background-color: var(--main-light-color);
 }
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+
+  color: #212121;
+}
+
 .current {
+  color: var(--current-color);
+}
+/* Header */
+.header {
+  background-color: var(--main-light-color);
+}
+.site-nav {
+}
+
+.site-logo {
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--main-dark-color);
+}
+
+.nav-list {
+}
+.nav-item {
+}
+.nav-link {
 }
