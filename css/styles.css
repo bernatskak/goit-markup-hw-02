@@ -63,7 +63,7 @@ body {
 .site-logo {
   font-size: 26px;
   line-height: 1.19;
-
+ text-decoration: none;
   color: var(--main-dark-color);
 }
 
@@ -72,4 +72,35 @@ body {
 .nav-item {
 }
 .nav-link {
+font-size: 14px;
+line-height: 1.14;
+color: var(--main-color);
 }
+
+
+.current-item:hover {
+font-size: 14px;
+line-height: 1.14;
+color: var(--current-color);
+}
+
+.auth-nav {
+font-size: 14px;
+line-height: 1.14;
+color: var(--secondary-color);
+}
+
+.nav-email{
+
+}
+
+.email-nav:hover{
+font-size: 14px;
+line-height: 1.14;
+
+color: var(--current-color);
+}
+
+
+/*Hero*/
+
