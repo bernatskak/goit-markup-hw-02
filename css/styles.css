@@ -1,6 +1,7 @@
 :root {
   /* Fonts */
   --main-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   /* Colors */
   --main-dark-color: #000;
   --main-light-color: #fff;
@@ -25,27 +26,14 @@ body {
   text-decoration: none;
   color: #212121;
 }
-.button {
-  border: none;
-  background-color: #2196f3;
-  cursor: pointer;
-  font-family: inherit;
-  color: inherit;
-}
 
 .list {
   list-style: none;
 }
 
-.section {
+/* Header */
+.header {
   background-color: var(--main-light-color);
-}
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1, 16;
-
-  color: #212121;
 }
 
 .current {
@@ -53,54 +41,106 @@ body {
   line-height: 1.19;
   color: var(--current-color);
 }
-/* Header */
-.header {
-  background-color: var(--main-light-color);
-}
-.site-nav {
+.site-nav .current-item {
+  color: var(--current-color);
 }
 
 .site-logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
- text-decoration: none;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--main-dark-color);
 }
 
-.nav-list {
-}
-.nav-item {
-}
 .nav-link {
-font-size: 14px;
-line-height: 1.14;
-color: var(--main-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
 }
 
-
-.current-item:hover {
-font-size: 14px;
-line-height: 1.14;
-color: var(--current-color);
+.site-nav .current-item:hover .site-nav .current-item:focus {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--current-color);
 }
 
-.auth-nav {
-font-size: 14px;
-line-height: 1.14;
-color: var(--secondary-color);
+.contact .contact-type {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.contact-mail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--current-color);
+}
+.contact-mail:hover {
+  color: var(--current-color);
 }
 
-.nav-email{
-
+.contact-tel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
 }
-
-.email-nav:hover{
-font-size: 14px;
-line-height: 1.14;
-
-color: var(--current-color);
-}
-
 
 /*Hero*/
 
+.section {
+  background-color: var(--border-color);
+}
+.section-title {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-light-color);
+}
+
+.button {
+  border: none;
+  background-color: #2196f3;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-style: normal;
+  color: var(--main-light-color);
+}
+.button:hover {
+  background-color: var(--current-color);
+  background-color: #188ce8;
+}
+.vissually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
