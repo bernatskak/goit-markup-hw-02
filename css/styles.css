@@ -43,12 +43,12 @@ body {
   color: var(--current-color);
 }
 .site-nav .current-item {
+  font-size: 14px;
+  line-height: 1.14;
   color: var(--current-color);
 }
 
 .site-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -64,13 +64,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-
-.site-nav .current-item:hover .site-nav .current-item:focus {
-  font-size: 14px;
-  line-height: 1.14;
+.nav-link:hover,
+.nav-link:focus {
   color: var(--current-color);
 }
-
 .contact .contact-type {
   font-family: 'Roboto';
   font-weight: 500;
@@ -87,7 +84,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--current-color);
 }
-.contact-mail:hover {
+.contact-mail:hover,
+.contact-mail:focus {
   color: var(--current-color);
 }
 
@@ -99,7 +97,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
-
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--current-color);
+}
 /*Hero*/
 
 .section {
@@ -123,12 +124,12 @@ body {
 
   color: var(--main-light-color);
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--current-color);
   background-color: #188ce8;
 }
-.section {
-}
+
 .vissually-hidden {
   position: absolute;
   width: 1px;
@@ -221,6 +222,9 @@ body {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+}
+.adress {
+  font-style: normal;
 }
 .street {
   font-family: 'Roboto';
