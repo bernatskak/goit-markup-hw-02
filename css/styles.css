@@ -253,11 +253,14 @@
   line-height: 1.62;
   color: var(--main-color);
 }
-.filter-item:hover,
-.filter-item:focus {
-  color: var(--main-light-color);
-}
+.button-filter {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
+  color: var(--main-color);
+  background-color: var(--badge-bg-color);
+}
 .button-filter:hover,
 .button-filter:focus {
   border: none;
@@ -267,6 +270,7 @@
   color: var(--main-light-color);
   background-color: var(--current-color);
 }
+
 /*Projects*/
 .project-list {
   font-size: 18px;
