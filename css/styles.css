@@ -12,14 +12,13 @@
   --badge-bg-color: #f5f4fa;
 }
 
-.body {
+body {
   font-family: var(--main-font-family);
   letter-spacing: 0.03em;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
 
-  background-color: var(--badge-bg-color);
   color: var(--main-color);
 }
 /* Common Styles */
@@ -38,8 +37,11 @@
 }
 
 .current {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--current-color);
 }
 
@@ -50,15 +52,18 @@
 }
 
 .site-logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: left;
   text-decoration: none;
+
   color: var(--main-dark-color);
 }
 
 .nav-link {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -70,7 +75,6 @@
   color: var(--current-color);
 }
 .contact .contact-type {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -78,12 +82,11 @@
   color: var(--secondary-color);
 }
 .contact-mail {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--current-color);
+  color: var(--secondary-color);
 }
 .contact-mail:hover,
 .contact-mail:focus {
@@ -91,7 +94,6 @@
 }
 
 .contact-tel {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -108,18 +110,19 @@
   background-color: var(--border-color);
 }
 .section-title {
-  font-family: var(--secondary-font-family);
+  font-family: var(--main-font-family);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--main-light-color);
 }
 
 .button {
   border: none;
-  background-color: #2196f3;
+  background-color: var(--current-color);
   cursor: pointer;
   font-family: inherit;
 
@@ -148,60 +151,58 @@
   text-decoration: none;
 }
 .feature .title {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--main-color);
 }
 
 .feature .text {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*Work*/
 .about-work {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--main-color);
 }
 
 /*Our team*/
 
 .team {
+  background-color: var(--badge-bg-color);
+}
+
+.team-list {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--main-color);
 }
+
 .about-name {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--main-color);
 }
 .position {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -209,7 +210,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*Contacts*/
 .footer {
@@ -222,32 +223,29 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--main-light-color);
 }
 .adress {
   font-style: normal;
 }
 .street {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  color: #ffffff;
+  text-decoration: none;
+  color: var(--main-light-color);
 }
 .contacts {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 /* Portfolio*/
 .filter-item {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -277,14 +275,22 @@
   line-height: 2;
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--main-color);
+}
+.project-img {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--main-color);
 }
 .project-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondary-color);
 }
 .img {
   background: var(--main-light-color);
