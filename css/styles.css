@@ -18,7 +18,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-
+  
   color: var(--main-color);
 }
 /* Common Styles */
@@ -130,7 +130,6 @@ body {
 }
 .button:hover,
 .button:focus {
-  background-color: var(--current-color);
   background-color: #188ce8;
 }
 
@@ -274,22 +273,26 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
+ 
   color: var(--main-color);
 }
 .project-img {
+  text-decoration: none;
+}
+.project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-decoration: none;
+
   color: var(--main-color);
 }
 .project-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-
+  
   color: var(--secondary-color);
 }
 .img {
